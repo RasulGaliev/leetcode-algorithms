@@ -3,7 +3,7 @@
  * @return {number[][]}
  */
 var threeSum = function(nums) {
-  nums.sort();
+  nums.sort((a, b) => a - b);
 
   const numsMap = new Map();
   for (let i = 0; i < nums.length; i++) {
